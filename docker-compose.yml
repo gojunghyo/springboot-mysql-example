@@ -1,0 +1,12 @@
+version: "3"
+services:
+  db:
+    image: mysql:latest
+    container_name: mysql_example_container
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_DATABASE=db_example2
+      - MYSQL_ROOT_PASSWORD=root
+    volumes:
+      - "./conf.d:/etc/mysql/conf.d:ro"
