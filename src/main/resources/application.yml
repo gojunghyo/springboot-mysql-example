@@ -3,11 +3,11 @@ spring:
     hibernate:
       ddl-auto: update
       show-sql: true
-    datasource:
-      url: jdbc:mysql://localhost:3306/db_example2
-      username: root
-      password: root
-      driver-class-name: com.mysql.cj.jdbc.Driver
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQLDialect
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_example2
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  properties:
+    hibernate:
+      dialect: org.hibernate.dialect.MySQLDialect
